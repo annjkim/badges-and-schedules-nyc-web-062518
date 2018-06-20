@@ -13,5 +13,6 @@ end
 
 def assign_rooms(array)
   new_array = []
+  counter = 1
   
   
