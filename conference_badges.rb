@@ -11,19 +11,20 @@ def batch_badge_creator(array)
   return new_array
 end
 
-def assign_rooms(array)
-  new_array = []
-  counter = 1
-  array.each do |name|
-    new_array.push("Hello, #{name} You'll be assigned to room #{counter}!")
-    counter += 1
+def assign_rooms(person)
+  room = 0
+  person.collect do |name|
+    room += 1
+    "Hello, #{name}! You'll be assigned to room #{room}!"
   end
-  return new_array
 end
 
-def printer(array)
-  batch_badge_creator(array).each do |id|
-    puts id
+def printer(person)
+  batch_badge_creator(person).each do |value|
+    puts value
+  end
+  assign_rooms(person).each do |value|
+    puts value
   end
 end
     
