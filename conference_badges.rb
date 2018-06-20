@@ -1,2 +1,4 @@
 # Write your code here.
-def 
+def badge_maker(name)
+  return "Hello, my name is #{name}."
+end
